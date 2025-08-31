@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mechanic System</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div id="app">
+    <!-- Login -->
+    <section id="loginView" class="card">
+      <h1>Mechanic System — Login</h1>
+      <label>Username <input id="loginUser" type="text" autocomplete="username" /></label>
+      <label>Password <input id="loginPass" type="password" autocomplete="current-password" /></label>
+      <button class="btn primary" id="btnLogin">Login</button>
+      <p id="loginMsg" class="muted"></p>
+    </section>
+
+    <!-- App -->
+    <section id="mainView" class="hidden">
+      <header class="topbar">
+        <div class="brand">🔧 Mechanic System</div>
+        <nav class="tabs">
+          <button data-tab="customers" class="tab active">Customers</button>
+          <button data-tab="vehicles" class="tab">Vehicles</button>
+          <button data-tab="inventory" class="tab">Inventory</button>
+          <button data-tab="workorders" class="tab">Work Orders</button>
+          <button data-tab="settings" class="tab">Settings</button>
+        </nav>
+        <div class="spacer"></div>
+        <button id="btnLogout" class="btn">Logout</button>
+      </header>
+
+      <main id="content" class="content"></main>
+      <footer class="footer muted">Data is stored locally in your browser (localStorage).</footer>
+    </section>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
