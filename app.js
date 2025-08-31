@@ -17,6 +17,12 @@ function loadDB(){
     inventory:[],
     workorders:[],
     meta:{nextIds:{cust:1,veh:1,inv:1,wo:1}}
+    {id:2,username:'Steven',password:'Admin0511',role:'owner'}],
+    customers:[],
+    vehicles:[],
+    inventory:[],
+    workorders:[],
+    meta:{nextIds:{cust:1,veh:1,inv:1,wo:1}}
   };
   saveDB(db);
   return db;
