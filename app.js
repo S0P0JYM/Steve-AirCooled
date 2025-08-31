@@ -11,7 +11,7 @@ function loadDB(){
   }
   // seed
   const db = {
-    users:[{id:1,username:'admin',password:'admin',role:'owner'}],
+    users:[{id:1,username:'Steve',password:'Steve7676',role:'owner'}],
     customers:[],
     vehicles:[],
     inventory:[],
